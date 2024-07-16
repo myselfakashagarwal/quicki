@@ -11,3 +11,10 @@ Quick script subshell commands to install stuff
 ```bash
 (curl -fsSL https://get.docker.com -o get-docker.sh ; sudo bash get-docker.sh )
 ```
+
+### node_exporter [amd64 & arm64 & x86_64] [linux] [rhel & debian]
+```
+(curl -fsSL https://github.com/myselfakashagarwal/quicki/blob/legacy/exporters/node_exporter.sh ; bash node_exporter.sh)
+```
+
+
