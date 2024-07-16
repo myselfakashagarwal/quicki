@@ -14,7 +14,7 @@ Quick script subshell commands to install stuff
 
 ### node_exporter [amd64 & arm64 & x86_64] [linux] [rhel & debian]
 ```
-(curl -fsSL https://github.com/myselfakashagarwal/quicki/blob/legacy/exporters/node_exporter.sh ; bash node_exporter.sh)
+( wget https://github.com/myselfakashagarwal/quicki/raw/legacy/exporters/node_exporter.sh -O node_exporter.sh ; bash node_exporter.sh )
 ```
 
 

@@ -1,14 +1,13 @@
 #!/bin/bash
 
 set -euo pipefail
-clear
 
 # Define colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
-NC='\033[0m'  # No Color
+NC='\033[0m'
 
 # Function to print messages
 print_message() {
@@ -18,12 +17,9 @@ print_message() {
 }
 
 print_message "${GREEN}" "
-███╗   ██╗ ██████╗ ██████╗ ███████╗    ███████╗██╗  ██╗██████╗  ██████╗ ██████╗ ████████╗███████╗██████╗
-████╗  ██║██╔═══██╗██╔══██╗██╔════╝    ██╔════╝╚██╗██╔╝██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔══██╗
-██╔██╗ ██║██║   ██║██║  ██║█████╗      █████╗   ╚███╔╝ ██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██████╔╝
-██║╚██╗██║██║   ██║██║  ██║██╔══╝      ██╔══╝   ██╔██╗ ██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██╔══██╗
-██║ ╚████║╚██████╔╝██████╔╝███████╗    ███████╗██╔╝ ██╗██║     ╚██████╔╝██║  ██║   ██║   ███████╗██║  ██║
-╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝    ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+.---------------.
+| node_exporter |
+'---------------'
 "
 
 # 1. Check for the Architecture and kernel
@@ -91,7 +87,7 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable node_exporter
 sudo systemctl start node_exporter
-print_message "${YELLOW}" "[Update]: Node Exporter service has been setup and started"
+print_message "${YELLOW}" "[Update]: node_exporter service has been setup and started on port 9100 "
 
 
 # Rubble remove
